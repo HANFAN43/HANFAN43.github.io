@@ -3,19 +3,21 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Cool
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
-language: en
+author: HANFAN
+language: zh-Hans
 timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: http://example.com
+url: http://www.hanfan.cool
 root: /
-permalink: :year/:month/:day/:title/
+# year/:month/:day/:title/
+# title.html
+permalink: :year/:month/:day/:title.html
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -47,7 +49,7 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace: ''
   wrap: true
   hljs: false
@@ -98,7 +100,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -106,3 +108,48 @@ deploy:
   type: git
   repo: 
         github: git@github.com:HANFAN43/HANFAN43.github.io.git,master
+        
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
+  
+  
+# 本地搜索
+search:
+  path: search.xml
+  field: all
+  format: html
+  limit: 100
+
+nofollow:
+  enable: true
+  field: site
+  exclude:
+    - 'www.hanfan.cool'
+    - 'hanfan.cool'
+    
+
+# 博文压缩
+neat_enable: true
+# 压缩html
+neat_html:
+  enable: true
+  exclude:
+# 压缩css  
+neat_css:
+  enable: true
+  exclude:
+    - '**/*.min.css'
+# 压缩js
+neat_js:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - '**/*.min.js'
+    - '**/jquery.fancybox.pack.js'
+    - '**/index.js'
+    - '**/fireworks.js'
