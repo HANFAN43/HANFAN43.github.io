@@ -1,15 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>Hello World</title>
-    <url>/2020/09/03/hello-world.html</url>
-    <content><![CDATA[<p>你好！</p>
-]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2020/09/03/hello-world.html"/>
+      <url>/2020/09/03/hello-world.html</url>
+      
+        <content type="html"><![CDATA[<p>你好！</p>]]></content>
+      
+      
       <categories>
-        <category>HelloWorld</category>
+          
+          <category> HelloWorld </category>
+          
       </categories>
-      <tags>
-        <tag>HelloWorld</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> HelloWorld </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
 </search>
