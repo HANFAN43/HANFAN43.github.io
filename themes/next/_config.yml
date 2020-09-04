@@ -122,7 +122,7 @@ menu:
   tags: /tags/ || fa fa-tags
   about: /about/ || fa fa-user
   #schedule: /schedule/ || fa fa-calendar
-  #sitemap: /sitemap.xml || fa fa-sitemap
+  sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
 
 # Enable / Disable menu icons / item badges.
@@ -613,9 +613,9 @@ changyan:
 # Valine
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
 valine:
-  enable: false
-  appid: # Your leancloud application appid
-  appkey: # Your leancloud application appkey
+  enable: true
+  appid: Druz06vUqzpX3wsPRa7YY3fb-gzGzoHsz
+  appkey: eYTz3OvJMbbXCkNRruDvm1FH
   notify: false # Mail notifier
   verify: false # Verification code
   placeholder: Just go go # Comment box placeholder
@@ -743,14 +743,14 @@ algolia_search:
 # Dependencies: https://github.com/theme-next/hexo-generator-searchdb
 local_search:
   enable: true
-  # If auto, trigger search by changing input.
-  # If manual, trigger search by pressing enter key or search button.
+ # If auto, trigger search by changing input.
+ # If manual, trigger search by pressing enter key or search button.
   trigger: auto
-  # Show top n results per article, show all results by setting to -1
+ # Show top n results per article, show all results by setting to -1
   top_n_per_article: 1
-  # Unescape html strings to the readable one.
+ # Unescape html strings to the readable one.
   unescape: false
-  # Preload the search data when the page loads.
+ # Preload the search data when the page loads.
   preload: false
 
 # Swiftype Search API Key
@@ -1019,3 +1019,5 @@ baidushare:
 # 站点关键字，利于 SEO 大概，记得用英文逗号分隔
 keywords: hexo,博客,生活,技术,代码
 
+sitemap: 
+  path: sitemap.xml

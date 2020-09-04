@@ -17,7 +17,9 @@ url: http://www.hanfan.cool
 root: /
 # year/:month/:day/:title/
 # title.html
-permalink: :year/:month/:day/:title.html
+# permalink: :title/
+# permalink: :id.html
+permalink:  :abbrlink.html
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -105,10 +107,11 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy: 
-  type: git
-  repo: 
-        github: git@github.com:HANFAN43/HANFAN43.github.io.git,master
-        
+ - type: git
+   repository: git@github.com:HANFAN43/HANFAN43.github.io.git
+   branch: master
+ - type: baidu_url_submitter
+
 symbols_count_time:
   symbols: true
   time: true
@@ -119,17 +122,17 @@ symbols_count_time:
 # 本地搜索
 search:
   path: search.xml
-  field: all
+  field: post
+  content: true
   format: html
-  limit: 100
-
+  limit: 10000
 nofollow:
   enable: true
   field: site
   exclude:
     - 'www.hanfan.cool'
     - 'hanfan.cool'
-    
+    - 'hanfan43.github.io'
 
 # 博文压缩
 neat_enable: true
@@ -153,3 +156,16 @@ neat_js:
     - '**/jquery.fancybox.pack.js'
     - '**/index.js'
     - '**/fireworks.js'
+
+abbrlink:
+    alg: crc32
+    rep: hex
+
+baidu_url_submit:
+# 提交最新的多少个链接
+  count: 100                 
+# 在百度站长平台中添加的域名
+  host: www.hanfan.cool
+# 秘钥
+  token: wyDn1cWF5ROsF6M5
+  path: baidu_urls.txt
