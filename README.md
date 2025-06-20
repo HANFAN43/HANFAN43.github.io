@@ -1,6 +1,8 @@
 # 大杂烩
 
-GITHUB地址：https://github.com/HANFAN43/HANFAN43.github.io
+cnblogs:[https://www.cnblogs.com/hanfan](https://www.cnblogs.com/hanfan)
+
+github:[https://github.com/HANFAN43/HANFAN43.github.io](https://github.com/HANFAN43/HANFAN43.github.io)
 
 ## 极客时间
 
